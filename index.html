@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='assets/css/jcco-calendar.css'>
+    <script src='assets/js/jquery.js'></script>
+    <title>Calendar Web Component</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="calendar-moreLink-container">
+   
+            <div class="calendar-container">
+    
+                <div class='calendar-hover-block'>
+    
+                    <div class="calendar-hover-header"><p></p></div>
+        
+                        <h4>Location: <span class="calendar-hover-location"></span></h4>
+                        <h4>Time: <span class="calendar-hover-time"></span></h4>
+                        <h4><span class="date-hover-time"></span></h4>
+    
+                    <div class="triangle-down"></div>
+    
+                </div> <!-- /calendar-hover-block -->
+                
+                <div class="calendar-list-block">
+    
+                    <h2>Events & Holidays</h2>
+    
+                    <ul class="calendar-list">
+    
+                        <li class="calendar-item" data-name="Election" data-time="8 a.m - 4 p.m." data-location="Convention Center" data-endDate="April 8 2023" data-multiDates="">
+    
+                            <div class="event-date-block">
+                                <div class="day-number">8</div>
+                                <div class="month">Apr</div>
+                            </div>
+    
+                            <div class="event-excerpt"><p><span>February Special Election</span><br>
+                                <a href="https://www.cnn.com">19th Senatorial District Special Election</a></p>
+                            </div>
+    
+                        </li> <!-- /calendar-item" -->
+    
+                        <li class="calendar-item" data-name="National Holiday" data-time="9:00 a.m." data-location="" data-endDate="April 16 2023" data-multiDates="Tuesday - Friday">
+    
+                            <div class="event-date-block">
+                                <div class="day-number">16</div>
+                                <div class="month">Apr</div>
+                            </div>
+    
+                            <div class="event-excerpt"><p><span>Valentine Day</span><br>
+                                <a href="https://www.msnbc.com">All Jefferson County Clerk's offices are closed</a></p>
+                            </div>
+    
+                        </li> <!-- /calendar-item" -->
+    
+                        <li class="calendar-item" data-name="National Holiday" data-time="All Day" data-location="" data-endDate="70423" data-multiDates="Wednesday - Friday">
+    
+                            <div class="event-date-block">
+                                <div class="day-number">4</div>
+                                <div class="month">Jul</div>
+                            </div>
+    
+                            <div class="event-excerpt"><p><span>4th of July</span><br>
+                                <a href="https://www.wired.com">All Jefferson County Clerk's offices are closed</a></p>
+                            </div>
+    
+                        </li> <!-- /calendar-item" -->
+    
+                    </ul> <!-- /calendar-list -->
+    
+                </div> <!-- /calendar-list-block" -->
+                
+                
+                <div class="social-media-block">
+                    
+                    <div class="social-media-div">
+                        <a href="https://www.wired.com">
+                            <svg id="linkedin_icon" class="social_icon_style" width="100%" height="100%" viewBox="0 0 48 48" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(1,0,0,1,-1537.99,-165.295)">
+                                    <g transform="matrix(1.50366,0,0,1.40544,0,0)">
+                                        <g transform="matrix(0.665044,0,0,0.711521,0,0)">
+                                            <path  d="M1576.2,213.294L1547.78,213.294C1542.38,213.294 1537.99,208.911 1537.99,203.505L1537.99,175.084C1537.99,169.678 1542.38,165.295 1547.78,165.295L1576.2,165.295C1581.61,165.295 1585.99,169.678 1585.99,175.084L1585.99,203.505C1585.99,208.911 1581.61,213.294 1576.2,213.294ZM1576.2,210.615C1580.13,210.615 1583.31,207.431 1583.31,203.505L1583.31,175.084C1583.31,171.158 1580.13,167.975 1576.2,167.975L1547.78,167.975C1543.86,167.975 1540.67,171.158 1540.67,175.084L1540.67,203.505C1540.67,207.431 1543.86,210.615 1547.78,210.615L1576.2,210.615ZM1555.64,180.395C1555.64,181.794 1554.75,182.938 1553.09,182.938C1551.57,182.938 1550.55,181.794 1550.55,180.522C1550.55,179.124 1551.57,177.853 1553.09,177.853C1554.62,177.853 1555.64,178.997 1555.64,180.395ZM1567.84,184.464C1571.02,184.464 1573.43,186.625 1573.43,191.329L1573.43,200.737L1568.35,200.737L1568.35,191.965C1568.35,189.93 1567.59,188.405 1565.81,188.405C1564.41,188.405 1563.77,189.549 1563.39,190.439C1563.26,190.82 1563.26,191.202 1563.26,191.71L1563.26,200.737L1558.18,200.737L1558.18,189.804C1558.18,187.896 1558.05,186.244 1558.05,184.845L1562.63,184.845L1562.88,187.007L1563.01,187.007C1563.65,185.989 1565.17,184.464 1567.84,184.464ZM1555.64,184.209L1555.64,200.736L1550.55,200.736L1550.55,184.209L1555.64,184.209Z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div> <!-- /social-media-div" -->
+    
+                    <div class="social-media-div">
+                        <a href="https://www.wired.com">
+                            <svg id="facebook_icon" class="social_icon_style" width="100%" height="100%" viewBox="0 0 48 49" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(1,0,0,1,-1537.99,-230.716)">
+                                    <g transform="matrix(1.50366,0,0,1.40544,0,0)">
+                                        <g transform="matrix(0.665044,0,0,0.711521,0,0)">
+                                            <path d="M1576.2,278.716L1547.78,278.716C1542.38,278.716 1537.99,274.333 1537.99,268.927L1537.99,240.506C1537.99,235.099 1542.38,230.716 1547.78,230.716L1576.2,230.716C1581.61,230.716 1585.99,235.099 1585.99,240.506L1585.99,268.927C1585.99,274.333 1581.61,278.716 1576.2,278.716ZM1576.2,276.037C1580.13,276.037 1583.31,272.853 1583.31,268.927L1583.31,240.506C1583.31,236.579 1580.13,233.396 1576.2,233.396L1547.78,233.396C1543.86,233.396 1540.67,236.579 1540.67,240.506L1540.67,268.927C1540.67,272.853 1543.86,276.037 1547.78,276.037L1576.2,276.037ZM1567.04,244.922C1564.94,244.922 1564.15,246.495 1564.15,247.954L1564.15,251.517L1569.56,251.517L1568.37,256.734L1564.15,256.734L1564.15,270.006L1557.82,270.006L1557.82,256.734L1553.61,256.734L1553.61,251.515L1557.82,251.515L1557.82,247.193C1557.82,242.63 1560.38,239.425 1565.76,239.425L1569.57,239.429L1569.57,244.922L1567.04,244.922Z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>	
+                    </div> <!-- /social-media-div" -->
+    
+                    <div class="social-media-div">
+                        <a href="https://www.wired.com">
+                            <svg  id="youtube_icon" class="social_icon_style" width="100%" height="100%" viewBox="0 0 48 48" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                                <g transform="matrix(1,0,0,1,-1537.99,-296.138)">
+                                    <g transform="matrix(1.50366,0,0,1.40544,0,0)">
+                                        <g transform="matrix(0.665044,0,0,0.711521,0,0)">
+                                            <path d="M1576.2,344.137L1547.78,344.137C1542.38,344.137 1537.99,339.754 1537.99,334.347L1537.99,305.927C1537.99,300.521 1542.38,296.138 1547.78,296.138L1576.2,296.138C1581.61,296.138 1585.99,300.521 1585.99,305.927L1585.99,334.347C1585.99,339.754 1581.61,344.137 1576.2,344.137ZM1576.2,341.457C1580.13,341.457 1583.31,338.274 1583.31,334.347L1583.31,305.927C1583.31,302.001 1580.13,298.817 1576.2,298.817L1547.78,298.817C1543.86,298.817 1540.67,302.001 1540.67,305.927L1540.67,334.347C1540.67,338.274 1543.86,341.457 1547.78,341.457L1576.2,341.457ZM1574.54,313.836C1575.08,315.877 1575.08,320.137 1575.08,320.137C1575.08,320.137 1575.08,324.397 1574.54,326.439C1574.24,327.566 1573.35,328.453 1572.22,328.754C1570.18,329.301 1561.99,329.301 1561.99,329.301C1561.99,329.301 1553.81,329.301 1551.76,328.754C1550.64,328.453 1549.75,327.566 1549.45,326.439C1548.9,324.397 1548.9,320.137 1548.9,320.137C1548.9,320.137 1548.9,315.877 1549.45,313.836C1549.75,312.709 1550.64,311.822 1551.76,311.521C1553.81,310.974 1561.99,310.974 1561.99,310.974C1561.99,310.974 1570.18,310.974 1572.22,311.521C1573.35,311.822 1574.24,312.709 1574.54,313.836ZM1559.38,324.065L1566.18,320.138L1559.38,316.21L1559.38,324.065Z"/>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div> <!-- /social-media-div" -->
+    
+                </div> <!-- /social-media-block -->
+    
+            </div> <!-- /calendar-container -->
+    
+            <a href="https://www.wired.com" class="clickForMore">More events&nbsp;></a>
+    
+        </div> <!-- /calendar-moreLink-container -->
+
+    </div> <!-- /container -->
+
+
+
+    <script src="assets/js/jcco-calendar.js"></script>
+</body>
+</html>
